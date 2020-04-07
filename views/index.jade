@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  style(type='text/css').
+    .tablestyle{
+        border: 1px solid black;
+    }
+  h2= title
+  -var datalist=datas
+    div
+      table.tablestyle
+        thead
+          tr 
+            th.tablestyle SupplierID
+            th.tablestyle SupplierName
+            th.tablestyle Address
+            th.tablestyle City
+            th.tablestyle Description
+            th.tablestyle Inventory
+            th.tablestyle Phone
+            th.tablestyle State
+            th.tablestyle Zip
+
+        tbody
+          each data in datas
+            tr  
+              td.tablestyle=data.supplier_id	
+              td.tablestyle=data.supplier_name
+              td.tablestyle=data.supplier_address
+              td.tablestyle=data.supplier_city
+              td.tablestyle=data.supplier_description
+              td.tablestyle=data.supplier_inventory
+              td.tablestyle=data.supplier_phone
+              td.tablestyle=data.supplier_state
+              td.tablestyle=data.supplier_zip
+
+              
+             
+              
+      
+      
+

@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 Search the suppliers details
+    form(name="searchsupplier", method="post", action="/searchsupplier")
+        div
+            input#inputSupplierName(type='text', placeholder='Enter supplier name',name='supplier_name')
+        div
+            button#btnSubmit(type='submit') Search
