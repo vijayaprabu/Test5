@@ -6,7 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "aws-sdk": "^2.651.0",
+    "aws-sdk": "^2.814.0",
     "body-parser": "*",
     "cassandra-driver": "*",
     "cookie-parser": "~1.4.4",
